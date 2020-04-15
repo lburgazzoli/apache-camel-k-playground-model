@@ -1,0 +1,1 @@
+# apache-camel-k-playground-model
