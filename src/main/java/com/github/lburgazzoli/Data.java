@@ -20,6 +20,14 @@ public class Data {
         this.report = report;
     }
 
+    @Override
+    public String toString() {
+        return "Data{" +
+            "user=" + user +
+            ", report=" + report +
+            '}';
+    }
+
     public static class User {
         private String name;
         private String token;
@@ -38,6 +46,14 @@ public class Data {
 
         public void setToken(String token) {
             this.token = token;
+        }
+
+        @Override
+        public String toString() {
+            return "User{" +
+                "name='" + name + '\'' +
+                ", token='" + token + '\'' +
+                '}';
         }
     }
 
@@ -77,6 +93,16 @@ public class Data {
 
         public void setLocation(String location) {
             this.location = location;
+        }
+
+        @Override
+        public String toString() {
+            return "Report{" +
+                "type='" + type + '\'' +
+                ", measurement='" + measurement + '\'' +
+                ", alert=" + alert +
+                ", location='" + location + '\'' +
+                '}';
         }
     }
 }
